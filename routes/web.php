@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
     Route::get('contact-us', [\App\Http\Controllers\Front\ContactController::class,'index'])->name('front.contact');
 
-    Route::get('/home', [\App\Http\Controllers\Front\WelcomeController::class,'index'])->name('front.welcome');
+    Route::get('/', [\App\Http\Controllers\Front\WelcomeController::class,'index'])->name('front.welcome');
 
     Route::get('/about-us', [\App\Http\Controllers\Front\AboutController::class,'index'])->name('front.about');
 
