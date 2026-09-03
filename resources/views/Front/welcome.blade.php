@@ -5,9 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="{{asset('itsol/https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap')}}" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
+    <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
+    <link rel="manifest" href="{{asset('site.webmanifest')}}">
 
-    <link rel="stylesheet" href="{{asset('itsol/https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{{asset('itsol/css/animate.css')}}">
 
@@ -24,7 +31,7 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-12 col-md d-flex align-items-center">
-                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">emailsample@email.com</a></p>
+                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:+233246102372">0246 102 372</a> / <a href="tel:+233246623172">0246 623 172</a> <span class="mailus">email us:</span> <a href="mailto:cmmsolutionsltd@gmail.com">cmmsolutionsltd@gmail.com</a></p>
             </div>
             <div class="col-12 col-md d-flex justify-content-md-end">
                 <div class="social-media">
@@ -42,7 +49,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{route('front.welcome')}}">CMM<span>SOL</span></a>
+        <a class="navbar-brand" href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="CMM Solutions Limited" class="logo-img"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
@@ -52,10 +59,8 @@
                 <li class="nav-item active"><a href="{{route('front.welcome')}}" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{route('front.about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{route('front.services')}}" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="{{route('front.case_study')}}" class="nav-link">Case Study</a></li>
-                <li class="nav-item"><a href="{{route('front.blog')}}" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="{{route('front.products')}}" class="nav-link">Products</a></li>
                 <li class="nav-item"><a href="{{route('front.contact')}}" class="nav-link">Contact us</a></li>
-                <li class="nav-item cta"><a href="#" class="nav-link">Free Consultation</a></li>
 
             </ul>
         </div>
@@ -63,24 +68,24 @@
 </nav>
 <!-- END nav -->
 
-<div class="hero-wrap js-fullheight" style="background-image: url({{asset('itsol/images/bg_1.jpg')}});" data-stellar-background-ratio="0.5">
+<div class="hero-wrap js-fullheight home-hero" style="background-image: url({{asset('itsol/images/bg_1.jpg')}});" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
             <div class="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="row">
                     <div class="col-md-7">
-                        <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows by their place and supplies</p>
+                        <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Practical digital solutions for better business and institutional performance.</p>
                     </div>
                 </div>
-                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Experienced for <br>Every Kinds of ITSolution</h1>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
+                <h1 class="mb-4 home-hero-title" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Thinking Ahead with <br>Digital Solutions</h1>
+                <p><a href="{{route('front.services')}}" class="btn btn-primary px-4 py-3">Explore our services</a></p>
             </div>
         </div>
     </div>
 </div>
 
-<section class="ftco-intro">
+<section class="ftco-intro home-intro-section">
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-md-7">
@@ -90,7 +95,7 @@
                             <div class="line"></div>
                             <div class="icon"><span class="flaticon-bolt"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Information Technology Consultancy</h3>
+                                <h3 class="heading mb-3">IT &amp; Digital Solutions</h3>
                             </div>
                         </div>
                     </div>
@@ -99,7 +104,7 @@
                             <div class="line"></div>
                             <div class="icon"><span class="flaticon-light-bulb"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Product Design Strategy</h3>
+                                <h3 class="heading mb-3">Customized Software</h3>
                             </div>
                         </div>
                     </div>
@@ -108,7 +113,7 @@
                             <div class="line"></div>
                             <div class="icon"><span class="flaticon-cyber"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Cyber Security &amp; Web Development</h3>
+                                <h3 class="heading mb-3">Secure, Scalable Systems</h3>
                             </div>
                         </div>
                     </div>
@@ -118,37 +123,40 @@
     </div>
 </section>
 
-<section class="ftco-section">
+<section class="ftco-section home-solutions-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-lg-6 heading-section text-center ftco-animate">
-                <h2 class="mb-4">More than <span>35+</span> years we provide <span>IT Solution</span></h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <h2 class="mb-4">Digital solutions built for <span>real-world needs</span></h2>
+                <p>Established in 2022, C.M.M Solutions Limited helps businesses, institutions, and organizations improve efficiency, security, service delivery, and decision-making.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="services-2 text-center">
+                <div class="services-2 home-solution-card text-center">
                     <div class="icon">
                         <span class="flaticon-web-programming"></span>
                     </div>
                     <div class="text">
-                        <h3>Web Development</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <h3>Software Development</h3>
+                        <p>We design, develop, implement, and support customized software tailored to each client's operational needs.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="{{asset('itsol/images/services.svg')}}" class="img-fluid" alt="">
+                <div class="home-solutions-image">
+                    <img src="{{asset('itsol/images/about-1.jpg')}}" class="img-fluid" alt="African team collaborating on digital solutions">
+                    <span>Technology with purpose</span>
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="services-2 text-center">
+                <div class="services-2 home-solution-card text-center">
                     <div class="icon">
                         <span class="flaticon-secure"></span>
                     </div>
                     <div class="text">
-                        <h3>Server Security</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <h3>Data &amp; Security</h3>
+                        <p>Modern data management and secure systems that help organizations work with confidence.</p>
                     </div>
                 </div>
             </div>
@@ -156,17 +164,17 @@
     </div>
 </section>
 
-<section class="ftco-counter img" id="section-counter">
+<section class="ftco-counter img home-impact-section" id="section-counter">
     <div class="container">
         <div class="row no-gutters d-flex">
             <div class="col-md-6 d-flex">
                 <div class="img d-flex align-self-stretch" style="background-image:url({{asset('itsol/images/about.jpg')}});"></div>
             </div>
-            <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
+            <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary home-impact-panel">
                 <div class="row justify-content-start pb-3">
                     <div class="col-md-12 heading-section heading-section-white ftco-animate">
-                        <h2 class="mb-4">Consult us here in <span>ITSolution</span></h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <h2 class="mb-4">Technology that helps organizations <span>move forward</span></h2>
+                        <p>From financial and school management to payroll, welfare, retail, and AI-powered learning, our solutions make everyday operations simpler.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -222,7 +230,7 @@
                     <div class="icon"><span class="flaticon-web-programming"></span></div>
                     <div class="media-body">
                         <h3 class="heading mb-3">Web Development</h3>
-                        <p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        <p>Software development and technical support for organizations.</p>
                     </div>
                 </div>
             </div>
@@ -232,7 +240,7 @@
                     <div class="icon"><span class="flaticon-stats"></span></div>
                     <div class="media-body">
                         <h3 class="heading mb-3">Database Analysis</h3>
-                        <p>A small river named Duden flows by their place and supplies.</p>
+                        <p>Data management and reporting that support better decisions.</p>
                     </div>
                 </div>
             </div>
@@ -242,7 +250,7 @@
                     <div class="icon"><span class="flaticon-secure"></span></div>
                     <div class="media-body">
                         <h3 class="heading mb-3">Server Security</h3>
-                        <p>A small river named Duden flows by their place and supplies.</p>
+                        <p>Secure, user-friendly systems built to grow with your organization.</p>
                     </div>
                 </div>
             </div>
@@ -252,7 +260,7 @@
                     <div class="icon"><span class="flaticon-presentation"></span></div>
                     <div class="media-body">
                         <h3 class="heading mb-3">UX/UI Strategy</h3>
-                        <p>A small river named Duden flows by their place and supplies.</p>
+                        <p>Implementation and support that keep your digital operations moving.</p>
                     </div>
                 </div>
             </div>
@@ -260,79 +268,89 @@
     </div>
 </section>
 
-<section class="ftco-section ftco-no-pt">
+<section class="ftco-section ftco-no-pt home-products-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <h2 class="mb-4">Our Strategic <span>Work</span></h2>
+                <h2 class="mb-4">Our digital <span>products</span></h2>
+                <p class="home-products-intro">Practical platforms created to help people learn, connect, manage operations, and access better opportunities.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="project">
-                    <div class="img">
-                        <img src="{{asset('itsol/images/work-1.jpg')}}" class="img-fluid" alt="Colorlib Template">
+        <div class="row home-products-grid">
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                <div class="project home-product-card w-100">
+                    <div class="img home-product-image">
+                        <img src="{{asset('itsol/images/work-1.jpg')}}" class="img-fluid" alt="Koursio">
                     </div>
-                    <div class="text text-center">
-                        <span>Web Development</span>
-                        <h3><a href="{{asset('itsol/project.html')}}">Best Solution for Information Technology</a></h3>
+                    <div class="text home-product-content text-center">
+                        <span>Education technology</span>
+                        <h3><a href="https://koursio.com/" target="_blank" rel="noopener noreferrer">Koursio</a></h3>
+                        <p>Explore subjects, create a learning profile, and get support throughout your education journey.</p>
+                        <a class="home-product-link" href="https://koursio.com/" target="_blank" rel="noopener noreferrer">Explore product <i class="fa fa-arrow-right"></i></a>
                     </div>
-                    <a href="{{asset('itsol/images/work-1.jpg')}}" class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="fa fa-expand"></span>
-                    </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="project">
-                    <div class="img">
-                        <img src="{{asset('itsol/images/work-2.jpg')}}" class="img-fluid" alt="Colorlib Template">
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                <div class="project home-product-card w-100">
+                    <div class="img home-product-image">
+                        <img src="{{asset('itsol/images/work-2.jpg')}}" class="img-fluid" alt="BuzSpace">
                     </div>
-                    <div class="text text-center">
-                        <span>Web Application</span>
-                        <h3><a href="{{asset('itsol/project.html')}}">Creative Idea Build Up</a></h3>
+                    <div class="text home-product-content text-center">
+                        <span>Marketplace technology</span>
+                        <h3><a href="https://www.buzspace.com/" target="_blank" rel="noopener noreferrer">BuzSpace</a></h3>
+                        <p>Connect space owners with sellers looking for the right shop space across Ghana.</p>
+                        <a class="home-product-link" href="https://www.buzspace.com/" target="_blank" rel="noopener noreferrer">Explore product <i class="fa fa-arrow-right"></i></a>
                     </div>
-                    <a href="{{asset('itsol/images/work-2.jpg')}}" class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="fa fa-expand"></span>
-                    </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="project">
-                    <div class="img">
-                        <img src="{{asset('itsol/images/work-3.jpg')}}" class="img-fluid" alt="Colorlib Template">
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                <div class="project home-product-card w-100">
+                    <div class="img home-product-image">
+                        <img src="{{asset('itsol/images/work-3.jpg')}}" class="img-fluid" alt="Novinax">
                     </div>
-                    <div class="text text-center">
-                        <span>Web Development</span>
-                        <h3><a href="{{asset('itsol/project.html')}}">Web Design Concept &amp; Web Analysis</a></h3>
+                    <div class="text home-product-content text-center">
+                        <span>Research technology</span>
+                        <h3><a href="https://novinax.com/" target="_blank" rel="noopener noreferrer">Novinax</a></h3>
+                        <p>Write, verify sources, and strengthen academic research with an intelligent assistant.</p>
+                        <a class="home-product-link" href="https://novinax.com/" target="_blank" rel="noopener noreferrer">Explore product <i class="fa fa-arrow-right"></i></a>
                     </div>
-                    <a href="{{asset('itsol/images/work-3.jpg')}}" class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="fa fa-expand"></span>
-                    </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="project">
-                    <div class="img">
-                        <img src="{{asset('itsol/images/work-4.jpg')}}" class="img-fluid" alt="Colorlib Template">
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                <div class="project home-product-card w-100">
+                    <div class="img home-product-image">
+                        <img src="{{asset('itsol/images/work-4.jpg')}}" class="img-fluid" alt="School Management Sys">
                     </div>
-                    <div class="text text-center">
-                        <span>UI/UX Strategy</span>
-                        <h3><a href="{{asset('itsol/project.html')}}">Strategy for Enduring Customer Relationships</a></h3>
+                    <div class="text home-product-content text-center">
+                        <span>Education technology</span>
+                        <h3><a href="https://golden-intels.bitlogictechnology.com/" target="_blank" rel="noopener noreferrer">School Management Sys</a></h3>
+                        <p>Support school administration, learner management, and educational operations in one place.</p>
+                        <a class="home-product-link" href="https://golden-intels.bitlogictechnology.com/" target="_blank" rel="noopener noreferrer">Explore product <i class="fa fa-arrow-right"></i></a>
                     </div>
-                    <a href="{{asset('itsol/images/work-4.jpg')}}" class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="fa fa-expand"></span>
-                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                <div class="project home-product-card w-100">
+                    <div class="img home-product-image">
+                        <img src="{{asset('itsol/images/work-5.jpg')}}" class="img-fluid" alt="Placement">
+                    </div>
+                    <div class="text home-product-content text-center">
+                        <span>School placement</span>
+                        <h3><a href="https://www.placement.aveshs.online/" target="_blank" rel="noopener noreferrer">Placement</a></h3>
+                        <p>Help families navigate school placement with convenient mobile wallet payment support.</p>
+                        <a class="home-product-link" href="https://www.placement.aveshs.online/" target="_blank" rel="noopener noreferrer">Explore product <i class="fa fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="ftco-section bg-light ftco-faqs">
+<section class="ftco-section bg-light ftco-faqs home-faq-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 order-md-last">
-                <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(images/about.jpg);">
+                <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url({{asset('itsol/images/about.jpg')}});">
                 </div>
                 <div class="d-flex mt-3">
                     <div class="img img-2 mr-md-2 w-100" style="background-image:url({{asset('itsol/images/about-1.jpg')}});"></div>
@@ -342,27 +360,21 @@
 
             <div class="col-lg-6">
                 <div class="heading-section mb-5 mt-5 mt-lg-0">
-                    <h2 class="mb-3">Frequently Asks Questions</h2>
+                    <h2 class="mb-3">Frequently Asked Questions</h2>
                 </div>
                 <div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
                     <div class="card">
                         <div class="card-header p-0" id="headingOne">
                             <h2 class="mb-0">
                                 <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-                                    <p class="mb-0">How can we help your business?</p>
+                                    <p class="mb-0">What digital solutions does C.M.M Solutions provide?</p>
                                     <i class="fa" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
                         <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
                             <div class="card-body py-3 px-0">
-                                <ol>
-                                    <li>Far far away, behind the word mountains</li>
-                                    <li>Consonantia, there live the blind texts</li>
-                                    <li>When she reached the first hills of the Italic Mountains</li>
-                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
-                                    <li>Separated they live in Bookmarksgrove right</li>
-                                </ol>
+                                <p>We provide customized software development, database and data management, IT implementation, technical support, and secure digital systems for businesses, schools, institutions, and organizations.</p>
                             </div>
                         </div>
                     </div>
@@ -371,20 +383,14 @@
                         <div class="card-header p-0" id="headingTwo" role="tab">
                             <h2 class="mb-0">
                                 <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-                                    <p class="mb-0">How long does it take to build a website?</p>
+                                    <p class="mb-0">How do you start a new project?</p>
                                     <i class="fa" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
                         <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="card-body py-3 px-0">
-                                <ol>
-                                    <li>Far far away, behind the word mountains</li>
-                                    <li>Consonantia, there live the blind texts</li>
-                                    <li>When she reached the first hills of the Italic Mountains</li>
-                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
-                                    <li>Separated they live in Bookmarksgrove right</li>
-                                </ol>
+                                <p>We first understand your goals, users, workflow, and technical needs. We then recommend a practical solution, agree on the scope, and guide the project through development, implementation, and support.</p>
                             </div>
                         </div>
                     </div>
@@ -393,20 +399,14 @@
                         <div class="card-header p-0" id="headingThree" role="tab">
                             <h2 class="mb-0">
                                 <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-                                    <p class="mb-0">Can I help your IT Solution for business?</p>
+                                    <p class="mb-0">How long does it take to deliver a solution?</p>
                                     <i class="fa" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
                         <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="card-body py-3 px-0">
-                                <ol>
-                                    <li>Far far away, behind the word mountains</li>
-                                    <li>Consonantia, there live the blind texts</li>
-                                    <li>When she reached the first hills of the Italic Mountains</li>
-                                    <li>Bookmarksgrove, the headline of Alphabet Village</li>
-                                    <li>Separated they live in Bookmarksgrove right</li>
-                                </ol>
+                                <p>Timelines depend on the scope, integrations, content, and level of customization. After understanding your requirements, we provide a clear delivery plan and keep you informed throughout the work.</p>
                             </div>
                         </div>
                     </div>
@@ -415,14 +415,14 @@
                         <div class="card-header p-0" id="headingFour" role="tab">
                             <h2 class="mb-0">
                                 <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-                                    <p class="mb-0">What are those requirements for ITSolutions?</p>
+                                    <p class="mb-0">Which C.M.M products can we use?</p>
                                     <i class="fa" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
                         <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="card-body py-3 px-0">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                <p>Our products include Koursio for learning, BuzSpace for marketplace connections, Novinax for writing and research support, School Management Sys for school administration, and Placement for school placement and mobile wallet payments.</p>
                             </div>
                         </div>
                     </div>
@@ -445,56 +445,56 @@
             <div class="col-md-12 testimonial">
                 <div class="carousel-testimony owl-carousel ftco-owl">
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/testimony-1.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_1.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <p class="name">Donna Scott</p>
+                                <p class="mb-4">Secure, user-friendly technology built for real-world organizational needs.</p>
+                                <p class="name">Ama Mensah</p>
                                 <span class="position">Marketing Manager</span>
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/testimony-2.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_2.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <p class="name">Roger Scott</p>
+                                <p class="mb-4">Digital systems that simplify operations and support better decisions.</p>
+                                <p class="name">Kwame Asante</p>
                                 <span class="position">Interface Designer</span>
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/testimony-3.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_3.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <p class="name">Roger Scott</p>
+                                <p class="mb-4">Scalable solutions for businesses, institutions, and organizations.</p>
+                                <p class="name">Akosua Boateng</p>
                                 <span class="position">UI Designer</span>
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/testimony-4.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_4.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <p class="name">Roger Scott</p>
+                                <p class="mb-4">From concept to implementation, we help your organization move forward.</p>
+                                <p class="name">Kofi Owusu</p>
                                 <span class="position">Web Developer</span>
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/testimony-5.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_1.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <p class="name">Roger Scott</p>
+                                <p class="mb-4">Technology consulting and support from a Ghanaian team that thinks ahead.</p>
+                                <p class="name">Yaw Ofori</p>
                                 <span class="position">System Analyst</span>
                             </div>
                         </div>
@@ -571,7 +571,7 @@
     </div>
 </section>
 
-<section class="ftco-appointment ftco-section img" style="background-image: url({{asset('itsol/images/bg_2.jpg')}});">
+<section class="ftco-appointment ftco-section img home-contact-section" style="background-image: url({{asset('itsol/images/bg_2.jpg')}});">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -629,8 +629,8 @@
         <div class="row mb-5">
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-footer-logo">Thinking<span>Ahead</span></h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <h2 class="ftco-footer-logo"><a href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="CMM Solutions Limited" class="footer-logo-img"></a></h2>
+                    <p>C.M.M Solutions Limited delivers secure, user-friendly, and cost-effective digital solutions across Ghana and Africa.</p>
                     <ul class="ftco-footer-social list-unstyled mt-2">
                         <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -656,7 +656,6 @@
                     <h2 class="ftco-heading-2">Legal</h2>
                     <ul class="list-unstyled">
                         <li><a href="#" class="py-2 d-block">Join Us</a></li>
-                        <li><a href="#" class="py-2 d-block">Blog</a></li>
                         <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
                         <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
                         <li><a href="#" class="py-2 d-block">Careers</a></li>
@@ -669,9 +668,9 @@
                     <h2 class="ftco-heading-2">Have a Questions?</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">Volta Place, Airport Residential Area, Accra, Ghana</span></li>
+                            <li><a href="tel:+233246102372"><span class="icon fa fa-phone"></span><span class="text">0246 102 372 / 0246 623 172</span></a></li>
+                            <li><a href="mailto:cmmsolutionsltd@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">cmmsolutionsltd@gmail.com</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -680,9 +679,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
 
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> C.M.M Solutions Limited. All rights reserved.</p>
             </div>
         </div>
     </div>
@@ -705,7 +702,7 @@
 <script src="{{asset('itsol/js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('itsol/js/jquery.animateNumber.min.js')}}"></script>
 <script src="{{asset('itsol/js/scrollax.min.js')}}"></script>
-<script src="{{asset('itsol/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="{{asset('itsol/js/google-map.js')}}"></script>
 <script src="{{asset('itsol/js/main.js')}}"></script>
 

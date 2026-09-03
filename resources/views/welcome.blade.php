@@ -5,9 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="{{asset('itsol/https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap')}}" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
+    <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
+    <link rel="manifest" href="{{asset('site.webmanifest')}}">
 
-    <link rel="stylesheet" href="{{asset('itsol/https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{{asset('itsol/css/animate.css')}}">
 
@@ -42,7 +49,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{asset('itsol/index.html')}}">IT<span>solution</span></a>
+        <a class="navbar-brand" href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="CMM Solutions Limited" class="logo-img"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
@@ -52,10 +59,7 @@
                 <li class="nav-item active"><a href="{{route('front.welcome')}}" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{asset('itsol/about.html')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{asset('itsol/services.html')}}" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="{{asset('itsol/cases.html')}}" class="nav-link">Case Study</a></li>
-                <li class="nav-item"><a href="{{asset('itsol/blog.html')}}" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="{{route('front.contact')}}" class="nav-link">Contact us</a></li>
-                <li class="nav-item cta"><a href="#" class="nav-link">Free Consultation</a></li>
 
             </ul>
         </div>
@@ -629,7 +633,7 @@
         <div class="row mb-5">
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-footer-logo">IT<span>solution</span></h2>
+                    <h2 class="ftco-footer-logo"><a href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="CMM Solutions Limited" class="footer-logo-img"></a></h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <ul class="ftco-footer-social list-unstyled mt-2">
                         <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -656,7 +660,6 @@
                     <h2 class="ftco-heading-2">Legal</h2>
                     <ul class="list-unstyled">
                         <li><a href="#" class="py-2 d-block">Join Us</a></li>
-                        <li><a href="#" class="py-2 d-block">Blog</a></li>
                         <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
                         <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
                         <li><a href="#" class="py-2 d-block">Careers</a></li>
@@ -705,7 +708,7 @@
 <script src="{{asset('itsol/js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('itsol/js/jquery.animateNumber.min.js')}}"></script>
 <script src="{{asset('itsol/js/scrollax.min.js')}}"></script>
-<script src=""{{asset('itsol/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')}}></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="{{asset('itsol/js/google-map.js')}}"></script>
 <script src="{{asset('itsol/js/main.js')}}"></script>
 

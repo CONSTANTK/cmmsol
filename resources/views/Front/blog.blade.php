@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ITSolution - Free Bootstrap 4 Template by Colorlib</title>
+    <title>CMM Solutions Limited</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="{{asset('itsol/https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap')}}" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
+    <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
+    <link rel="manifest" href="{{asset('site.webmanifest')}}">
 
-    <link rel="stylesheet" href="{{asset('itsol/https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{{asset('itsol/css/animate.css')}}">
 
@@ -24,7 +31,7 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-12 col-md d-flex align-items-center">
-                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">emailsample@email.com</a></p>
+                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:+233246102372">0246 102 372</a> / <a href="tel:+233246623172">0246 623 172</a> <span class="mailus">email us:</span> <a href="mailto:cmmsolutionsltd@gmail.com">cmmsolutionsltd@gmail.com</a></p>
             </div>
             <div class="col-12 col-md d-flex justify-content-md-end">
                 <div class="social-media">
@@ -42,7 +49,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{route('front.welcome')}}">CMM<span>SOL</span></a>
+        <a class="navbar-brand" href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="CMM Solutions Limited" class="logo-img"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
@@ -52,10 +59,7 @@
                 <li class="nav-item"><a href="{{route('front.welcome')}}" class="nav-link">Home</a></li>
                 <li class="nav-item active"><a href="{{route('front.about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{route('front.services')}}" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="{{route('front.case_study')}}" class="nav-link">Case Study</a></li>
-                <li class="nav-item"><a href="{{route('front.blog')}}" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="{{route('front.contact')}}" class="nav-link">Contact us</a></li>
-                <li class="nav-item cta"><a href="#" class="nav-link">Free Consultation</a></li>
 
             </ul>
         </div>
@@ -93,7 +97,7 @@
                                 <span class="mos">June</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        <h3 class="heading"><a href="#">How digital systems improve organizational efficiency</a></h3>
                     </div>
                 </div>
             </div>
@@ -111,7 +115,7 @@
                                 <span class="mos">June</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        <h3 class="heading"><a href="#">Choosing the right school management solution</a></h3>
                     </div>
                 </div>
             </div>
@@ -129,7 +133,7 @@
                                 <span class="mos">June</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        <h3 class="heading"><a href="#">Why secure data management matters</a></h3>
                     </div>
                 </div>
             </div>
@@ -147,7 +151,7 @@
                                 <span class="mos">June</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        <h3 class="heading"><a href="#">Digitizing welfare contributions and benefits</a></h3>
                     </div>
                 </div>
             </div>
@@ -165,7 +169,7 @@
                                 <span class="mos">June</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        <h3 class="heading"><a href="#">Using AI to support learning and assessment</a></h3>
                     </div>
                 </div>
             </div>
@@ -183,7 +187,7 @@
                                 <span class="mos">June</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        <h3 class="heading"><a href="#">Smarter inventory, sales, and payroll operations</a></h3>
                     </div>
                 </div>
             </div>
@@ -211,8 +215,8 @@
         <div class="row mb-5">
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-footer-logo">Thinking<span>Ahead</span></h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <h2 class="ftco-footer-logo"><a href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="CMM Solutions Limited" class="footer-logo-img"></a></h2>
+                    <p>C.M.M Solutions Limited delivers secure, user-friendly, and cost-effective digital solutions across Ghana and Africa.</p>
                     <ul class="ftco-footer-social list-unstyled mt-2">
                         <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -238,7 +242,6 @@
                     <h2 class="ftco-heading-2">Legal</h2>
                     <ul class="list-unstyled">
                         <li><a href="#" class="py-2 d-block">Join Us</a></li>
-                        <li><a href="#" class="py-2 d-block">Blog</a></li>
                         <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
                         <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
                         <li><a href="#" class="py-2 d-block">Careers</a></li>
@@ -251,9 +254,9 @@
                     <h2 class="ftco-heading-2">Have a Questions?</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">Volta Place, Airport Residential Area, Accra, Ghana</span></li>
+                            <li><a href="tel:+233246102372"><span class="icon fa fa-phone"></span><span class="text">0246 102 372 / 0246 623 172</span></a></li>
+                            <li><a href="mailto:cmmsolutionsltd@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">cmmsolutionsltd@gmail.com</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -262,9 +265,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
 
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> C.M.M Solutions Limited. All rights reserved.</p>
             </div>
         </div>
     </div>
@@ -287,7 +288,7 @@
 <script src="{{asset('itsol/js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('itsol/js/jquery.animateNumber.min.js')}}"></script>
 <script src="{{asset('itsol/js/scrollax.min.js')}}"></script>
-<script src="{{asset('itsol/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="{{asset('itsol/js/google-map.js')}}"></script>
 <script src="{{asset('itsol/js/main.js')}}"></script>
 

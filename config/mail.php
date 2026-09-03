@@ -96,6 +96,11 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    'to' => [
+        'address' => env('MAIL_TO_ADDRESS', 'cmmsolutionsltd@gmail.com'),
+        'name' => env('MAIL_TO_NAME', 'C.M.M Solutions Limited'),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings
