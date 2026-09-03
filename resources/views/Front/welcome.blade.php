@@ -91,29 +91,32 @@
             <div class="col-md-7">
                 <div class="row no-gutters d-flex align-items-stretch">
                     <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                        <div class="services-1">
+                        <div class="services-1 home-intro-card">
                             <div class="line"></div>
                             <div class="icon"><span class="flaticon-bolt"></span></div>
                             <div class="media-body">
                                 <h3 class="heading mb-3">IT &amp; Digital Solutions</h3>
+                                <p>Practical technology that helps organizations work smarter and serve people better.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                        <div class="services-1 color-1">
+                        <div class="services-1 home-intro-card">
                             <div class="line"></div>
                             <div class="icon"><span class="flaticon-light-bulb"></span></div>
                             <div class="media-body">
                                 <h3 class="heading mb-3">Customized Software</h3>
+                                <p>Flexible applications designed around your goals, workflow, and users.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                        <div class="services-1 color-2">
+                   <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                        <div class="services-1 home-intro-card">
                             <div class="line"></div>
                             <div class="icon"><span class="flaticon-cyber"></span></div>
                             <div class="media-body">
                                 <h3 class="heading mb-3">Secure, Scalable Systems</h3>
+                                <p>Dependable and protected systems that grow with your organization and its changing needs.</p>
                             </div>
                         </div>
                     </div>
