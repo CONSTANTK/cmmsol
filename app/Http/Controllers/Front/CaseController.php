@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class CaseController extends Controller
 {
     public function index(){
-        return view('front.case_study');
+        return view('Front.case_study');
     }
 }

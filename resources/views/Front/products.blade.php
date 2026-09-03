@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-12 col-md d-flex align-items-center">
-                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:+233246102372">0246 102 372</a> / <a href="tel:+233246623172">0246 623 172</a> <span class="mailus">email us:</span> <a href="mailto:cmmsolutionsltd@gmail.com">cmmsolutionsltd@gmail.com</a></p>
+                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:+23320825866">020 825 866</a> / <a href="tel:+233246102372">0246 102 372</a> <span class="mailus">email us:</span> <a href="mailto:cmmsolutionsltd@gmail.com">cmmsolutionsltd@gmail.com</a></p>
             </div>
         </div>
     </div>
@@ -96,14 +96,54 @@
 
 <footer class="ftco-footer ftco-footer-2 ftco-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="ftco-footer-logo"><a href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="C.M.M Solutions Limited" class="footer-logo-img"></a></h2>
-                <p>Secure, user-friendly, and cost-effective digital solutions across Ghana and Africa.</p>
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-footer-logo"><a href="{{route('front.welcome')}}"><img src="{{asset('images/logo.jpg')}}" alt="CMM Solutions Limited" class="footer-logo-img"></a></h2>
+                    <p>Secure, user-friendly, and cost-effective digital solutions across Ghana and Africa.</p>
+                    <ul class="ftco-footer-social list-unstyled mt-2">
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h2 class="ftco-heading-2">Have a question?</h2>
-                <p><a href="tel:+233246102372">0246 102 372</a> / <a href="tel:+233246623172">0246 623 172</a><br><a href="mailto:cmmsolutionsltd@gmail.com">cmmsolutionsltd@gmail.com</a><br>Volta Place, Airport Residential Area, Accra, Ghana</p>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-5">
+                    <h2 class="ftco-heading-2">Explore</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="{{route('front.about')}}" class="py-2 d-block">About us</a></li>
+                        <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact us</a></li>
+                        <li><a href="{{route('front.services')}}" class="py-2 d-block">What we do</a></li>
+                        <li><a href="{{route('front.products')}}" class="py-2 d-block">Our products</a></li>
+                        <li><a href="tel:+23320825866" class="py-2 d-block">Call us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Legal</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact</a></li>
+                        <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
+                        <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a question?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">16 Anaglate Street, Bankoe-Ho, Ghana</span></li>
+                            <li><a href="tel:+23320825866"><span class="icon fa fa-phone"></span><span class="text">020 825 866</span></a></li>
+                            <li><a href="tel:+233246102372"><span class="icon fa fa-phone"></span><span class="text">0246 102 372</span></a></li>
+                            <li><a href="tel:+23354631004"><span class="icon fa fa-phone"></span><span class="text">054 631 004</span></a></li>
+                            <li><a href="tel:+233208258966"><span class="icon fa fa-phone"></span><span class="text">020 825 8966</span></a></li>
+                            <li><a href="mailto:cmmsolutionsltd@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">cmmsolutionsltd@gmail.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row"><div class="col-md-12 text-center"><p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> C.M.M Solutions Limited. All rights reserved.</p></div></div>

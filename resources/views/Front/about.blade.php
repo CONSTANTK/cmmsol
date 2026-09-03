@@ -31,7 +31,7 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-12 col-md d-flex align-items-center">
-                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:+233246102372">0246 102 372</a> / <a href="tel:+233246623172">0246 623 172</a> <span class="mailus">email us:</span> <a href="mailto:cmmsolutionsltd@gmail.com">cmmsolutionsltd@gmail.com</a></p>
+                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:+23320825866">020 825 866</a> / <a href="tel:+233246102372">0246 102 372</a> <span class="mailus">email us:</span> <a href="mailto:cmmsolutionsltd@gmail.com">cmmsolutionsltd@gmail.com</a></p>
             </div>
             <div class="col-12 col-md d-flex justify-content-md-end">
                 <div class="social-media">
@@ -377,8 +377,8 @@
                     <h2 class="ftco-heading-2">Have a Questions?</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon fa fa-map marker"></span><span class="text">Volta Place, Airport Residential Area, Accra, Ghana</span></li>
-                            <li><a href="tel:+233246102372"><span class="icon fa fa-phone"></span><span class="text">0246 102 372 / 0246 623 172</span></a></li>
+                            <li><span class="icon fa fa-map marker"></span><span class="text">16 Anaglate Street, Bankoe-Ho, Ghana</span></li>
+                            <li><a href="tel:+23320825866"><span class="icon fa fa-phone"></span><span class="text">020 825 866 / 0246 102 372 / 054 631 004 / 020 825 8966</span></a></li>
                             <li><a href="mailto:cmmsolutionsltd@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">cmmsolutionsltd@gmail.com</span></a></li>
                         </ul>
                     </div>

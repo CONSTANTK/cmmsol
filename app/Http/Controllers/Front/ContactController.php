@@ -12,7 +12,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('front.contact');
+        return view('Front.contact');
     }
 
     public function send(Request $request): RedirectResponse
