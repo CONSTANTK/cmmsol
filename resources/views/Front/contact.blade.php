@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="{{asset('itsol/css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('itsol/css/style.css')}}">
+    @livewireStyles
 </head>
 <body>
 <div class="wrap">
@@ -60,6 +61,7 @@
                 <li class="nav-item"><a href="{{route('front.about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{route('front.services')}}" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="{{route('front.products')}}" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="{{route('front.faq')}}" class="nav-link">FAQ</a></li>
                 <li class="nav-item active"><a href="{{route('front.contact')}}" class="nav-link">Contact us</a></li>
 
             </ul>
@@ -139,54 +141,7 @@
                                 <span class="subheading">Start a conversation</span>
                                 <h3 class="mb-3">Send us an enquiry</h3>
                                 <p class="contact-form-intro">Share a few details about your organization and the solution you have in mind. We will use your message to understand how best to assist you.</p>
-                                @if (session('success'))
-                                    <div class="alert alert-success" role="alert">{{ session('success') }}</div>
-                                @endif
-                                @if ($errors->any())
-                                    <div class="alert alert-danger" role="alert">Please review the highlighted fields and try again.</div>
-                                @endif
-                                <form method="POST" action="{{route('front.contact.send')}}" id="contactForm" name="contactForm" class="contactForm">
-                                    @csrf
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="label" for="name">Full Name</label>
-                                                <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="name" value="{{old('name')}}" placeholder="Your full name" required>
-                                                @error('name')<small class="text-danger">{{ $message }}</small>@enderror
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="label" for="email">Email Address</label>
-                                                <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" value="{{old('email')}}" placeholder="you@example.com" required>
-                                                @error('email')<small class="text-danger">{{ $message }}</small>@enderror
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="label" for="subject">Subject</label>
-                                                <input type="text" class="form-control @error('subject') is-invalid @enderror" name="subject" id="subject" value="{{old('subject')}}" placeholder="How can we help?" required>
-                                                @error('subject')<small class="text-danger">{{ $message }}</small>@enderror
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="label" for="#">Message</label>
-                                                <textarea name="message" class="form-control @error('message') is-invalid @enderror" id="message" cols="30" rows="5" placeholder="Tell us about your goals or challenge" required>{{old('message')}}</textarea>
-                                                @error('message')<small class="text-danger">{{ $message }}</small>@enderror
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <button type="submit" class="btn btn-primary contact-submit-btn">
-                                                    <span class="contact-submit-label">Send Enquiry</span>
-                                                    <span class="contact-submit-spinner" role="status" aria-hidden="true"></span>
-                                                </button>
-                                                <div class="submitting"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                @livewire('contact-form', ['style' => 'full'])
                             </div>
                         </div>
                         <div class="col-md-5 order-md-first d-flex align-items-stretch">
@@ -223,12 +178,12 @@
                 <div class="ftco-footer-widget mb-4 ml-md-5">
                     <h2 class="ftco-heading-2">Explore</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">About</a></li>
-                        <li><a href="#" class="py-2 d-block">Contact</a></li>
-                        <li><a href="#" class="py-2 d-block">What We Do</a></li>
-                        <li><a href="#" class="py-2 d-block">Plans &amp; Pricing</a></li>
-                        <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                        <li><a href="#" class="py-2 d-block">Call Us</a></li>
+                        <li><a href="{{route('front.about')}}" class="py-2 d-block">About</a></li>
+                        <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact</a></li>
+                        <li><a href="{{route('front.services')}}" class="py-2 d-block">What We Do</a></li>
+                        <li><a href="{{route('front.products')}}" class="py-2 d-block">Products</a></li>
+                        <li><a href="{{route('front.faq')}}" class="py-2 d-block">FAQ</a></li>
+                        <li><a href="tel:+23320825866" class="py-2 d-block">Call Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -236,11 +191,11 @@
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Legal</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">Join Us</a></li>
-                        <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
-                        <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
-                        <li><a href="#" class="py-2 d-block">Careers</a></li>
-                        <li><a href="#" class="py-2 d-block">Contact</a></li>
+                        <li><a href="{{route('front.privacy')}}" class="py-2 d-block">Privacy Policy</a></li>
+                        <li><a href="{{route('front.terms')}}" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                        <li><a href="{{route('front.delivery')}}" class="py-2 d-block">Delivery &amp; Refund Policy</a></li>
+                        <li><a href="{{route('front.faq')}}" class="py-2 d-block">FAQ</a></li>
+                        <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -297,5 +252,6 @@
     });
 </script>
 
+@livewireScripts
 </body>
 </html>

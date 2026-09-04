@@ -21,3 +21,8 @@ Route::post('contact-us', [\App\Http\Controllers\Front\ContactController::class,
 
     Route::get('/our-services', [\App\Http\Controllers\Front\ServicesController::class,'index'])->name('front.services');
     Route::get('/our-products', [\App\Http\Controllers\Front\ProductsController::class,'index'])->name('front.products');
+
+    Route::get('/faq', [\App\Http\Controllers\Front\FaqController::class,'index'])->name('front.faq');
+    Route::get('/terms-of-service', [\App\Http\Controllers\Front\TermsController::class,'index'])->name('front.terms');
+    Route::get('/privacy-policy', [\App\Http\Controllers\Front\PrivacyController::class,'index'])->name('front.privacy');
+    Route::get('/delivery-and-refund-policy', [\App\Http\Controllers\Front\DeliveryController::class,'index'])->name('front.delivery');

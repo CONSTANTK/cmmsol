@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="{{asset('itsol/css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('itsol/css/style.css')}}">
+    @livewireStyles
 </head>
 <body>
 <div class="wrap">
@@ -60,6 +61,7 @@
                 <li class="nav-item"><a href="{{route('front.about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{route('front.services')}}" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="{{route('front.products')}}" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="{{route('front.faq')}}" class="nav-link">FAQ</a></li>
                 <li class="nav-item"><a href="{{route('front.contact')}}" class="nav-link">Contact us</a></li>
 
             </ul>
@@ -580,48 +582,7 @@
         <div class="row">
             <div class="col-md-6 half ftco-animate">
                 <h2 class="mb-4">Don't hesitate to contact us</h2>
-                <form action="#" class="appointment">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="form-field">
-                                    <div class="select-wrap">
-                                        <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">Services</option>
-                                            <option value="">Web Development</option>
-                                            <option value="">Database Analysis</option>
-                                            <option value="">Server Security</option>
-                                            <option value="">UX/UI Strategy</option>
-                                            <option value="">Branding</option>
-                                            <option value="">Applications</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                @livewire('contact-form', ['style' => 'appointment'])
             </div>
         </div>
     </div>
@@ -645,12 +606,12 @@
                 <div class="ftco-footer-widget mb-4 ml-md-5">
                     <h2 class="ftco-heading-2">Explore</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">About</a></li>
-                        <li><a href="#" class="py-2 d-block">Contact</a></li>
-                        <li><a href="#" class="py-2 d-block">What We Do</a></li>
-                        <li><a href="#" class="py-2 d-block">Plans &amp; Pricing</a></li>
-                        <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                        <li><a href="#" class="py-2 d-block">Call Us</a></li>
+                        <li><a href="{{route('front.about')}}" class="py-2 d-block">About</a></li>
+                        <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact</a></li>
+                        <li><a href="{{route('front.services')}}" class="py-2 d-block">What We Do</a></li>
+                        <li><a href="{{route('front.products')}}" class="py-2 d-block">Products</a></li>
+                        <li><a href="{{route('front.faq')}}" class="py-2 d-block">FAQ</a></li>
+                        <li><a href="tel:+23320825866" class="py-2 d-block">Call Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -658,11 +619,11 @@
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Legal</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">Join Us</a></li>
-                        <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
-                        <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
-                        <li><a href="#" class="py-2 d-block">Careers</a></li>
-                        <li><a href="#" class="py-2 d-block">Contact</a></li>
+                        <li><a href="{{route('front.privacy')}}" class="py-2 d-block">Privacy Policy</a></li>
+                        <li><a href="{{route('front.terms')}}" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                        <li><a href="{{route('front.delivery')}}" class="py-2 d-block">Delivery &amp; Refund Policy</a></li>
+                        <li><a href="{{route('front.faq')}}" class="py-2 d-block">FAQ</a></li>
+                        <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -709,5 +670,6 @@
 <script src="{{asset('itsol/js/google-map.js')}}"></script>
 <script src="{{asset('itsol/js/main.js')}}"></script>
 
+@livewireScripts
 </body>
 </html>

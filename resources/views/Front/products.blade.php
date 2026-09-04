@@ -37,6 +37,7 @@
                 <li class="nav-item"><a href="{{route('front.about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{route('front.services')}}" class="nav-link">Services</a></li>
                 <li class="nav-item active"><a href="{{route('front.products')}}" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="{{route('front.faq')}}" class="nav-link">FAQ</a></li>
                 <li class="nav-item"><a href="{{route('front.contact')}}" class="nav-link">Contact us</a></li>
             </ul>
         </div>
@@ -116,6 +117,7 @@
                         <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact us</a></li>
                         <li><a href="{{route('front.services')}}" class="py-2 d-block">What we do</a></li>
                         <li><a href="{{route('front.products')}}" class="py-2 d-block">Our products</a></li>
+                        <li><a href="{{route('front.faq')}}" class="py-2 d-block">FAQ</a></li>
                         <li><a href="tel:+23320825866" class="py-2 d-block">Call us</a></li>
                     </ul>
                 </div>
@@ -125,8 +127,10 @@
                     <h2 class="ftco-heading-2">Legal</h2>
                     <ul class="list-unstyled">
                         <li><a href="{{route('front.contact')}}" class="py-2 d-block">Contact</a></li>
-                        <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
-                        <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                        <li><a href="{{route('front.faq')}}" class="py-2 d-block">FAQ</a></li>
+                        <li><a href="{{route('front.privacy')}}" class="py-2 d-block">Privacy Policy</a></li>
+                        <li><a href="{{route('front.terms')}}" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                        <li><a href="{{route('front.delivery')}}" class="py-2 d-block">Delivery &amp; Refund Policy</a></li>
                     </ul>
                 </div>
             </div>

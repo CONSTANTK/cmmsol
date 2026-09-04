@@ -27,7 +27,7 @@ class ContactController extends Controller
         Mail::to(config('mail.to.address'))->send(new ContactEnquiry($enquiry));
 
         return redirect()
-            ->route('front.contact')
+            ->back()
             ->with('success', 'Thank you. Your enquiry has been sent successfully.');
     }
 }
