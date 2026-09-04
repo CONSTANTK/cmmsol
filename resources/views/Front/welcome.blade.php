@@ -450,7 +450,7 @@
             <div class="col-md-12 testimonial">
                 <div class="carousel-testimony owl-carousel ftco-owl">
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_1.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/client-1.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
@@ -461,7 +461,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_2.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/client-2.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
@@ -472,7 +472,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_3.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/client-3.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
@@ -483,7 +483,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_4.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/client-4.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
@@ -494,7 +494,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/person_1.jpg')}});">
+                        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({{asset('itsol/images/client-5.jpg')}});">
                             <div class="overlay"></div>
                             <div class="text">
                                 <div class="line"></div>
